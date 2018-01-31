@@ -1,7 +1,8 @@
 var katzDeli = [];
 
 function takeANumber(katzDeliLine,customer) {
-  
+  katzDeliLine.push(customer)
+  return `Welcome, ${customer}. You are number ` + (katzDeliLine.length - 1) + ` in line.`
 }
 
 function nowServing(){
@@ -19,7 +20,9 @@ function currentLine(katzDeliLine) {
       if (i != katzDeliLine.length) {
         line = line + ', '
       }
+    var list = list + line
     }
+    return "The line is currently: " + list
   } else {
     return "There is nobody waiting to be served!"
   }
