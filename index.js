@@ -12,3 +12,15 @@ function nowServing(){
   }
 }
 
+function currentLine(katzDeliLine) {
+  if (katzDeliLine.length > 0) {
+    for (let i=0;i<katzDeliLine.length;i++) {
+      var line = `${i}.` + katzDeliLine[i]
+      if (i != katzDeliLine.length) {
+        line = line + ', '
+      }
+    }
+  } else {
+    return "There is nobody waiting to be served!"
+  }
+}
