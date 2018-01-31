@@ -25,6 +25,6 @@ function currentLine(katzDeliLine) {
     }
     return "The line is currently: " + list
   } else {
-    return "There is nobody waiting to be served!"
+    return "The line is currently empty."
   }
 }
