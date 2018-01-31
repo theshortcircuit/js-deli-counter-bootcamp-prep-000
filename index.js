@@ -15,13 +15,13 @@ function nowServing(katzDeliLine){
 }
 
 function currentLine(katzDeliLine) {
+  var list = ''
   if (katzDeliLine.length > 0) {
     for (let i=0;i<katzDeliLine.length;i++) {
       var line = `${i+1}. ` + katzDeliLine[i]
       if (i+1 != katzDeliLine.length) {
         line = line + ', '
       }
-    var list = ''
     list = list + line
     }
     return "The line is currently: " + list
